@@ -28,7 +28,7 @@ nav {
 }
 
 .landing-page {
-  height: 90vh;
+  height: 91vh;
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0,0,0,0.9)), url(./img/heroimg.jpg);
   background-size: cover;
   background-position: top;
@@ -131,6 +131,36 @@ nav {
   font-family: 'Arvo', serif;
 }
 
+.about-page {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #EEEDEF;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.about-page-header {
+  display: flex;
+  align-items: center;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+  width: 18rem;
+  height: 5rem;
+  margin: 20rem 0 0 7rem;
+  border-left: 1rem solid orange;
+}
+
+.about-section-container {
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 8em;
+  background-color: white;
+  display: flex;
+  width: 90vw;
+  height: 60vh;
+}
+
 @media screen and (max-width: 600px) {
   .menu-toggle {
     display: flex;
@@ -155,9 +185,7 @@ nav {
     border-top: 2px solid orange;
     text-align: center;
   }
-  .nav-links li:first-child {
-    border-top: 0;
-  }
+
   .nav-links li:last-child {
     border-bottom: 2px solid orange;
   }
@@ -166,8 +194,8 @@ nav {
   }
   .nav-active {
     background-color: black;
-    margin-top: 8rem;
-    height: 20rem;
+    margin-top: 7rem;
+    height: 18.43rem;
     position: absolute;
     z-index: 100;
   }
@@ -181,6 +209,9 @@ nav {
   .main-heading-secondary,
   .main-heading-tertiary{
     text-align: center;
+  }
+  .about-page-header{
+    margin: 20rem auto 0 auto;
   }
 }
 
