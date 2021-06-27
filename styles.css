@@ -140,7 +140,7 @@ nav {
   flex-direction: column;
 }
 
-.about-page-header {
+.page-header {
   display: flex;
   align-items: center;
   font-family: "Merriweather Sans", sans-serif;
@@ -214,20 +214,66 @@ nav {
 }
 
 .project-page {
-  width: 100vw;
-  height: 100vh;
+  background-color: white;
+  min-height: 150vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .project-container {
-  background-color: white;
+  margin: 5rem auto;
   width: 80%;
-  height: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.project {
+  background-color: white;
+  display: grid;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-name{
+  background-color: rgb(243, 180, 64);
+}
+
+.project-name h5{
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.project-description {
+  font-family: "Arvo", serif;
+  font-size: 1.6rem;
+  background-color: #eeedef;
+  line-height: 1.7;
+}
+
+.project-description h5 {
+  padding: 1rem;
+}
+
+.project-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(243, 180, 64);
+  padding: 1rem;
+}
+
+.project-cta a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -277,7 +323,7 @@ nav {
   .main-heading-tertiary {
     text-align: center;
   }
-  .about-page-header {
+  .page-header {
     margin: 10rem auto 0 auto;
   }
   .about-section-container {
@@ -300,5 +346,8 @@ nav {
   }
   .skill {
     font-size: 1.6rem;
+  }
+  .project-container{
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 }
