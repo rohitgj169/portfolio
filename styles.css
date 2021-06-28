@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,11 @@ nav {
   top: 0;
 }
 
+footer {
+  height: 20vh;
+  background-color: black;
+}
+
 .landing-page {
   height: 91vh;
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.9)),
@@ -38,6 +44,12 @@ nav {
 .logo {
   font-size: 3rem;
   padding: 1.5rem;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.logo a {
+  text-decoration: none;
+  color: orange;
 }
 
 .nav-links ul {
@@ -145,7 +157,7 @@ nav {
   align-items: center;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
-  width: 18rem;
+  width: 20rem;
   height: 5rem;
   margin: 12rem 0 0 7rem;
   border-left: 2rem solid orange;
@@ -175,12 +187,14 @@ nav {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  padding: 1rem;
 }
 
 .about-main {
   margin-top: 2rem;
   font-family: "Arvo", serif;
   font-size: 2rem;
+  padding: 1rem;
 }
 
 .about-skills {
@@ -196,9 +210,12 @@ nav {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  padding: 1rem;
 }
 
 .skills-list-head {
+  padding: 1rem;
+  font-size: 2rem;
   font-family: "Arvo", serif;
   color: orange;
 }
@@ -215,11 +232,9 @@ nav {
 
 .project-page {
   background-color: white;
-  min-height: 150vh;
+  height: auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .project-container {
@@ -239,11 +254,11 @@ nav {
   width: 100%;
 }
 
-.project-name{
+.project-name {
   background-color: rgb(243, 180, 64);
 }
 
-.project-name h5{
+.project-name h5 {
   text-align: center;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
@@ -274,6 +289,65 @@ nav {
   text-decoration: none;
   color: black;
   font-family: "Merriweather Sans", sans-serif;
+}
+
+.contact-page {
+  height: 80vh;
+  background-color: #eeedef;
+}
+
+.contact-page-anchor {
+  height: 1rem;
+  margin-bottom: 12rem;
+}
+
+.contact-page-header {
+  display: flex;
+  align-items: center;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 2rem;
+  width: 20rem;
+  height: 5rem;
+  margin-left: 6rem;
+  border-left: 2rem solid orange;
+}
+
+.form-container form {
+  margin: 10rem auto;
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.form-input {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-input span {
+  flex: 0 0 20%;
+  font-size: 4rem;
+  color: orange;
+}
+
+.form-input input {
+  flex: 0 0 80%;
+  font-family: "Arvo", serif;
+  height: 80%;
+  padding: 1rem;
+  border: 2px solid orange;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -347,7 +421,10 @@ nav {
   .skill {
     font-size: 1.6rem;
   }
-  .project-container{
+  .project-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  .form-container form {
+    width: 80vw;
   }
 }

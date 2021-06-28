@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <title>Rohit George Jacob</title>
 </head>
-<body>
+<body id="landing-section">
   <nav>
-    <div class="logo">RGJ</div>
+    <div class="logo">
+      <a href="#landing-section" class="btn-scroll-logo">RGJ</a>
+    </div>
     <a href="" class="menu-toggle">
       <span class="menu-line"></span>
       <span class="menu-line"></span>
@@ -21,13 +25,13 @@
     </a>
     <div class="nav-links">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#section-1" class="nav-link">About</a></li>
+        <li><a href="#section-2 " class="nav-link">Projects</a></li>
+        <li><a href="#section-3" class="nav-link">Contact Me</a></li>
       </ul>
     </div>
   </nav>
-  <section class="landing-page">
+  <section class="landing-page" >
     <div class="heading-container">
       <div class="heading-text">
         <h1 class="main-heading-primary">Greetings,</h1>
@@ -35,12 +39,12 @@
         <h1 class="main-heading-tertiary">I am a Full Stack <span class="main-heading-highlight">Web Developer</span></h1>
       </div>
       <div class="heading-buttons">
-        <a href="#">My Work</a>
+        <a href="#" class="btn-scroll-project">My Projects</a>
         <a href="#">Contact Me</a>
       </div>
     </div>
   </section>
-  <section class="about-page">
+  <section class="about-page" id="section-1">
     <div class="page-header">
       <h1>&nbsp&nbsp&nbspAbout Me</h1>
     </div>
@@ -58,7 +62,7 @@
       </div>
     </div> 
   </section>
-  <section class="project-page">
+  <section class="project-page" id="section-2">
     <div class="page-header">
       <h1>&nbsp&nbsp&nbspProjects</h1>
     </div>
@@ -66,7 +70,7 @@
       <div class="project">
         <img src="./img/traderr.jpg" alt="full stack project 1" class="project-img">
         <div class="project-name">
-          <h5>Trader Among Us - An item bartering App</h5>
+          <h5>Trader Among Us - An Item Bartering Application</h5>
         </div>
         <div class="project-description">
           <h5>A full stack application using the Node.js and Express.js for the back-end, React.js for the front-end MongoDB for the database system. Socket.IO was used for real-time messaging, JSON web tokens for user authentication and image uploads to S3 compatible services.
@@ -108,7 +112,7 @@
       <div class="project">
         <img src="./img/survive.jpg" alt="javascript project 4" class="project-img">
         <div class="project-name">
-          <h5>Survive - An auto battler</h5>
+          <h5>Survive - An Auto Battler</h5>
         </div>
         <div class="project-description">
           <h5>A game created using HTML CSS and JavaScript
@@ -121,6 +125,33 @@
       </div>
     </div>
   </section>
+  <section class="contact-page" id="section-3">
+    <div class="contact-page-anchor"></div>
+    <div class="contact-page-header">
+      <h1>&nbsp&nbsp&nbspContact Me</h1>
+    </div>
+    <div class="form-container">
+      <form action="https://formsubmit.co/rohit.george.jacob@gmail.com" method="POST">
+        <div class="form-input">
+          <span class="material-icons-outlined">person</span>
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-input">
+          <span class="material-icons-outlined">email</span>
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-input">
+          <span class="material-icons-outlined">message</span>
+          <input type="text" name="message" placeholder="Enter message here" required>
+      </div>
+        <input type="hidden" name="_subject" value="New form submission">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    text
+  </footer>
   <script src="./main.js"></script>
 </body>
 </html>
