@@ -31,6 +31,9 @@ nav {
 footer {
   height: 20vh;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .landing-page {
@@ -123,6 +126,7 @@ footer {
   color: orange;
 }
 
+
 .heading-buttons {
   display: flex;
   flex-direction: column;
@@ -165,16 +169,18 @@ footer {
 
 .about-section-container {
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90vw;
-  height: 50vh;
+  min-height: 50vh;
+  
 }
 
 .about-info {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.205);
 
   background-color: white;
   padding: 2rem;
@@ -193,12 +199,12 @@ footer {
 .about-main {
   margin-top: 2rem;
   font-family: "Arvo", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1rem;
 }
 
 .about-skills {
-  border: 2px solid orange;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.205);
   background-color: white;
   padding: 2rem;
   width: 44vw;
@@ -243,11 +249,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 5rem;
+  
 }
 
 .project {
   background-color: white;
   display: grid;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.205);
 }
 
 .project img {
@@ -317,8 +325,6 @@ footer {
   padding: 4rem;
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.205);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 50vw;
   height: 40vh;
@@ -346,8 +352,32 @@ footer {
   font-family: "Arvo", serif;
   height: 80%;
   padding: 1rem;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   border-radius: 2px;
+}
+
+.footer-container {
+  width: 20vw;
+  height: 100%;
+  /* border: 1px solid white; */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-container img {
+  width: 75%;
+}
+
+.send-btn {
+  color: white;
+  background-color: transparent;
+  width: 10rem;
+  height: 3rem;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 2px solid orange;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -408,7 +438,8 @@ footer {
     width: 100%;
     height: auto;
     border: 0;
-    border-bottom: 1px solid orange;
+    /* border-bottom: 1px solid orange; */
+    margin-bottom: 1rem;
   }
   .about-skills {
     width: 100%;
@@ -416,10 +447,13 @@ footer {
     border: 0;
   }
   .about-main {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .skills-list-head{
+    font-size: 1.2rem;
   }
   .skill {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .project-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
