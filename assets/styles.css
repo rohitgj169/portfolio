@@ -484,6 +484,12 @@ footer {
   .about-section-container {
     flex-direction: column;
   }
+
+  .about-page {
+    height: 100%;
+    padding-bottom: 4rem;
+  }
+
   .about-info {
     font-size: 1rem;
     width: 100%;
@@ -509,7 +515,10 @@ footer {
   .project-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
+  .form-input {
+    width: 90%;
+  }
   .form-container form {
-    width: 80vw;
+    width: 90vw;
   }
 }
