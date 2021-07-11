@@ -19,7 +19,7 @@ nav {
   font-family: "Merriweather Sans", sans-serif;
   height: 10vh;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
@@ -78,9 +78,9 @@ footer {
 .nav-link::before {
   content: "";
   position: absolute;
-  left:0;
-  right:0;
-  bottom:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 2px;
   background-color: orange;
   transform: scaleX(0);
@@ -111,6 +111,20 @@ footer {
   width: 100%;
   background-color: orange;
   border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.line-1 {
+  transform: translateX(-30px);
+  background: transparent;
+}
+
+.line-0 {
+  transform: rotate(45deg) translate(0px, 15px);
+}
+
+.line-2 {
+  transform: rotate(-45deg) translate(0px, -15px);
 }
 
 .heading-container {
@@ -460,13 +474,15 @@ footer {
   .nav-links li a {
     padding: 1rem;
   }
+
   .nav-active {
     background-color: black;
-    margin-top: 7rem;
+    margin-top: 6rem;
     height: 19rem;
     position: absolute;
     z-index: 100;
   }
+
   .heading-container {
     flex-direction: column;
   }
